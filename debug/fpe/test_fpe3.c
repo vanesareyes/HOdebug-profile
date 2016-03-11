@@ -12,21 +12,29 @@ int main(int argc, char *argv[])
   set_fpe_x87_sse_();
 #endif
 
-  printf("Insert a, b \n");
+  printf("Square root, division and comparison\n");
+  printf("Insert a\n");
   scanf("%f",&a);
+  printf("Insert b\n");
   scanf("%f",&b);
 
-  tmp = sqrtf(a / b);
-  
-  if(tmp > 2.)
-    {
-      c = +1.;
-    }
-  else
-    {
-      c = -1.;
-    }
+  printf("Calculating a/b...");
+  tmp = a / b;
+  printf("Done!\n");
 
+  printf("Calculating sqrt(a/b)...");
+  tmp = sqrt(tmp);
+  printf("Done!\n");
+  
+  printf("Comparing with 2...");
+
+  if (tmp > 2.) {
+    c = +1.;
+  } else {
+    c = -1.;
+  }
+
+  printf("Done!\n");
   printf("c = %f \n", tmp);
   
   return(EXIT_SUCCESS);

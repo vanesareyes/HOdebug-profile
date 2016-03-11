@@ -12,21 +12,25 @@ int main(int argc, char *argv[])
   set_fpe_x87_sse_();
 #endif
 
-  printf("Insert a, b \n");
+  printf("Division and comparison\n");
+  printf("Insert a\n");
   scanf("%f",&a);
+  printf("Insert b\n");
   scanf("%f",&b);
 
+  printf("Calculating a/b...");
   tmp = a / b;
+  printf("Done!\n");
   
-  if(tmp > 2.)
-    {
-      c = +1.;
-    }
-  else
-    {
-      c = -1.;
-    }
+  printf("Comparing with 2...");
 
+  if (tmp > 2.) {
+    c = +1.;
+  } else {
+    c = -1.;
+  }
+
+  printf("Done!");
   printf("c = %f \n", c);
   
   return(EXIT_SUCCESS);

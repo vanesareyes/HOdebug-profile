@@ -6,21 +6,22 @@
 
 int main(int argc, char *argv[])
 {
-  float a, b, c, tmp;
+  float a, b, c;
 
 #ifdef TRAPFPE
   set_fpe_x87_sse_();
 #endif
 
-  printf("Insert a, b \n");
+  printf("Division\n");
+  printf("Insert a\n");
   scanf("%f",&a);
+  printf("Insert b\n");
   scanf("%f",&b);
 
-  tmp = a / b;
-  
-  c = tmp;
+  printf("Calculating a/b...");
+  c = a / b;
+  printf("Done!\n");
 
-  printf("c = %f \n", c);
-  
+  printf("c = a/b = %f\n", c);
   return(EXIT_SUCCESS);
 }
