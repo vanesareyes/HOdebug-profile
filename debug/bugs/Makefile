@@ -1,5 +1,6 @@
 .PHONY: default help object executable all clean segfault dynamic static nobugs
-CC = gcc
+CC = gcc 
+CFLAGS = 
 
 LD = $(CC)
 
@@ -35,7 +36,7 @@ static: add_array_static.e
 nobugs: add_array_nobugs.e 
 
 %_c.o: %.c
-	$(CC) -c $^ -o $@
+	$(CC) $(CFLAGS) -c $^ -o $@
 
 %.e: %_c.o
 	$(LD) $^ -o $@
