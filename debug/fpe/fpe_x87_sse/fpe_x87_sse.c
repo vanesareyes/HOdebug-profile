@@ -10,7 +10,7 @@
 /* on x86 set_fpe_x87_sse_ enables trapping of OVERFLOW, DIVBYZERO, INVALID
    in x87 FPU and SSE */
 
-int set_fpe_x87_sse_(void)
+int set_fpe_x87_sse(void)
 {
   int retcode;
   
@@ -22,7 +22,7 @@ int set_fpe_x87_sse_(void)
 /* on x86 clear_fpe_x87_sse_ disables trapping of OVERFLOW, DIVBYZERO, INVALID
    in x87 FPU and SSE */
 
-int clear_fpe_x87_sse_(void)
+int clear_fpe_x87_sse(void)
 {
   int retcode;
 

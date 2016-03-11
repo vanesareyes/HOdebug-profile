@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
   float a, b, c;
 
 #ifdef TRAPFPE
-  set_fpe_x87_sse_();
+  set_fpe_x87_sse();
 #endif
 
   printf("Division\n");

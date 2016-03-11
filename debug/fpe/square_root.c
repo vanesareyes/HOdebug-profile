@@ -9,10 +9,10 @@ int main(int argc, char *argv[])
   float a, b, c, tmp;
 
 #ifdef TRAPFPE
-  set_fpe_x87_sse_();
+  set_fpe_x87_sse();
 #endif
 
-  printf("Division and comparison\n");
+  printf("Square root, division and comparison\n");
   printf("Insert a\n");
   scanf("%f",&a);
   printf("Insert b\n");
@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
 
   printf("Calculating a/b...");
   tmp = a / b;
+  printf("Done!\n");
+
+  printf("Calculating sqrt(a/b)...");
+  tmp = sqrt(tmp);
   printf("Done!\n");
   
   printf("Comparing with 2...");
@@ -30,8 +34,8 @@ int main(int argc, char *argv[])
     c = -1.;
   }
 
-  printf("Done!");
-  printf("c = %f \n", c);
+  printf("Done!\n");
+  printf("c = %f \n", tmp);
   
   return(EXIT_SUCCESS);
 }
