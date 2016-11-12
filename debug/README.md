@@ -4,7 +4,7 @@ En esta carpeta hay cuatro archivos Aquí hay cuatro carpetas, cada una
 con sus ejercicios. Las respuestas a los ejercicios tienen que estar
 en esta carpeta, bajo el nombre `respuestas.md`.
 
-## Various bugs
+## Varios bugs
 
 En la carpeta `bugs/` hay varios bugs ya hechos y resueltos, pensado
 para hacerlo en clase. Aquí tenemos un `Makefile` donde, además,
